@@ -1,0 +1,88 @@
+* {
+    justify-content: center;
+
+}
+
+body {
+    background-color: #1c2c54;
+}
+
+button {
+    width: 50px;
+    height: 100px;
+    color: maroon;
+    background-color: skyblue;
+    text-align: center;
+    justify-content: space-between;
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -100px;
+    ;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    font-size: 4rem;
+
+
+}
+
+h2 {
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+
+}
+
+p {
+    color: aliceblue;
+    text-align: center;
+    text-decoration: solid;
+
+}
+
+
+
+#hang {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    position: relative;
+    top: 0;
+
+
+
+}
+
+#myCanvas {
+    color: bisque;
+    background: bisque;
+}
+
+#secretWord {
+    color: whitesmoke;
+    text-decoration-color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 3rem;
+
+
+}
+
+#hangman {
+    display: block;
+    margin-left: 650px;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 200px;
+    margin-top: -290px;
+
+}
