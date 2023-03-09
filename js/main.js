@@ -1,4 +1,4 @@
-
+console.log("Js test main branch");
 
 //make  random words work on the screen 
 let randomWords = ['candy', 'nature', 'bean', 'bear', 'water', 'red', 'rose', 'spring', 'blue', 'power', 'car', 'pen', 'ear', 'laugh', 'plate', 'house', 'party', 'salt', 'shop', 'phone'];
