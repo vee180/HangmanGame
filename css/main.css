@@ -86,3 +86,25 @@ p {
     margin-top: -290px;
 
 }
+
+/* #message {
+    background-color: white;
+    width: 100vw;
+    height: 100vw;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+} */
+
+#reset {
+    background-color: #3A1F00;
+    color: whitesmoke;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    font-size: medium;
+    margin-left: 650px;
+
+}

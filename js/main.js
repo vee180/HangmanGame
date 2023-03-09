@@ -5,7 +5,7 @@ let randomWords = ['candy', 'nature', 'bean', 'bear', 'water', 'red', 'rose', 's
 let randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
 console.log(randomWord);
 
-
+//find an indexof letter whatever player clicked
 let secretWord = document.getElementById("secretWord");
 let randomWordLength = randomWord.length;
 console.log(randomWordLength);
@@ -32,8 +32,8 @@ function setLetter(event) {
         }, 0);
     };
 }
-
-//for letter buttons
+let numberOfTries = 0;
+//if a player clicked some buttons of letter it should be inside of 
 let letter = document.getElementById("letters");
 letter.addEventListener('click', (evt) => {
     if (randomWord.includes(evt.target.innerText.toLowerCase())
@@ -43,10 +43,16 @@ letter.addEventListener('click', (evt) => {
         secretWord.innerText = splitWord.join('\u00a0')
         console.log(randomWord.indexOf(evt.target.innerText.toLowerCase()));
         console.log(secretWord.innerText.split('\u00a0'));
-    } else {
+        evt.target.style.backgroundColor = 'green';
+    }
+    else {
         let changeImg = document.getElementById("hangman")
         changeImg.style.marginTop = "-310px";
+        evt.target.style.backgroundColor = "red";
+        numberOfTries += 1;
     }
+
+
     console.log(displayMessage()); //calling the function
 
 })
@@ -61,24 +67,30 @@ letter.addEventListener('click', (evt) => {
 
 
 
-let inCorrectGuesses = 2;
-let popupEl = document.getElementById("popupAlert")
 
-//if player guessed the hidden word correct then display 'You won'
-//  player couldnt guess it then move your img to up and player has 2 chances, if player loses it display 'You Lost';
+
+//if player guessed the hidden word correct then display something
+//  player couldnt guess it then move your img to up and player has 2 chances, if player loses it display something else;
 
 
 //defining the function
 function displayMessage() {
     if (randomWord === secretWord.innerText.replaceAll(/\s/g, '')) {
-        return 'YOU WIN!'
-    } else {
-        return 'You Lost!'
+        return window.open('file:///Users/venerasultan/code/project-1/js/winner.html')
+    } else if (numberOfTries >= 3) {
+        return window.open('file:///Users/venerasultan/code/project-1/js/image.html');
+
     }
 
 
 }
 
+//reset button works and page uploads
+document.getElementById("reset").onclick = function () {
+    document.getElementById("letters").value = "";
+    document.getElementById("secretWord").value = "";
+
+};
 
 
 
