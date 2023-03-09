@@ -26,6 +26,9 @@ Game style exists of background color,sizing,decoration,width and height
 In Javascript there is a variable for random/secret words which player has to guess.And it follows with Math.random() static method for to display different words when the page uploads.After that we used some DOM elements to put random words text inside of our guess line and made it invisible.
 
 
+![Hangman Game](images/hangman.jpeg)
+
+
 
 
 

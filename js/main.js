@@ -1,14 +1,13 @@
 console.log("Js test main branch");
 
-//make  random words work on the screen 
+//make  random word/secret word for a player to guess
 let randomWords = ['candy', 'nature', 'bean', 'bear', 'water', 'red', 'rose', 'spring', 'blue', 'power', 'car', 'pen', 'ear', 'laugh', 'plate', 'house', 'party', 'salt', 'shop', 'phone'];
 
+//random word/secret word will show up on our display whenever we upload the page
 let randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
 console.log(randomWord);
 
-
-
-//find an indexof letter whatever player clicked
+//find an index of letter in random/secret word text which player pressed 
 let secretWord = document.getElementById("secretWord");
 let randomWordLength = randomWord.length;
 console.log(randomWordLength);
@@ -17,9 +16,7 @@ for (i = 0; i < randomWord.length; i++) {
 
 }
 
-
-
-//putting the text of  randomword inside of the line but make it invisible;
+//text of random word/secret will match
 let pEl = document.createElement('p');
 pEl.value = randomWord;
 pEl.style.display = 'none';
@@ -65,9 +62,9 @@ letter.addEventListener('click', (evt) => {
 //defining the function
 function displayMessage() {
     if (randomWord === secretWord.innerText.replaceAll(/\s/g, '')) {
-        return window.open('file:///Users/venerasultan/code/project-1/js/winner.html')
+        document.getElementById("hang").src = "https://static.vecteezy.com/system/resources/previews/008/440/439/original/you-won-illustration-free-vector.jpg"
     } else if (numberOfTries >= 3) {
-        return window.open('file:///Users/venerasultan/code/project-1/js/image.html');
+        document.getElementById("hang").src = "https://play-lh.googleusercontent.com/CrLSEl1Vnn2XeXm9uEukivohhdzxebG-pVVOmaSsKW4oNNRg18OT8K5M--F4rHTR8P8"
 
     }
 
