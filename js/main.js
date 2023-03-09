@@ -85,12 +85,8 @@ function displayMessage() {
 
 }
 
-//reset button works and page uploads
-document.getElementById("reset").onclick = function () {
-    document.getElementById("letters").value = "";
-    document.getElementById("secretWord").value = "";
 
-};
+
 
 
 
