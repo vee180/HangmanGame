@@ -8,12 +8,12 @@ Hangman-game is a word game in which the player is trying to guess a secret word
 
 ## Getting Started
 
-To play this game press any letter which you think it might be in our secret word. Player has 3 lives/chances to survive in this game.If player guesses  wrong letter by one click,picture of a person will go up to be hanged.But player will have still 2 chances to win the game.So player guesses incorrectly 3 times, he loses and if guesses the hidden word before 3 incorrect ones player wins!
+To play this game press any letter which you think it might be in our secret word. Player has 3 lives/chances to survive in this game.So player guesses incorrectly 3 times, he loses and if guesses the hidden word before 3 incorrect letters then player wins!
 
 
 ## List of the technologies used
  HTML
- /CSS/
+ / CSS /
  JAVASCRIPT 
 
  ##### HTML
@@ -23,10 +23,23 @@ To play this game press any letter which you think it might be in our secret wor
 Game style exists of background color,sizing,decoration,width and height
 
 ##### Javascript
-In Javascript there is a variable for random/secret words which player has to guess.And it follows with Math.random() static method for to display different words when the page uploads.After that we used some DOM elements to put random words text inside of our guess line and made it invisible.
+In Javascript there is a variable for random/secret words which player has to guess.And it follows with Math.random() static method for to display different words when the page uploads.After that we used some DOM elements to put random words text inside of our guess line and made it invisible.If player guessed any correct letter from random word/secret word then it will turn to green otherwise it will turn red.And lastly we have our function where we are changing the images based on players guess/word if its correct will display 'you win' image if its incorrect 'hanged man' image.
+
+
+
+
+### Future Encanments
+Adding player attributes on a display such as players live,how many lives/chances has/left.
+New levels and requirements for the new level
+
+
+
 
 
 ![Hangman Game](images/hangman.jpeg)
+
+
+#####Link(https://vee180.github.io/HangmanGame/)
 
 
 
