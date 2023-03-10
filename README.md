@@ -28,7 +28,7 @@ In Javascript there is a variable for random/secret words which player has to gu
 
 
 
-### Future Encanments
+### Future Enhancements
 Adding player attributes on a display such as players live,how many lives/chances has/left.
 New levels and requirements for the new level
 
